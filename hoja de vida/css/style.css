@@ -1,0 +1,34 @@
+.container {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.item1{
+    border: solid;
+    border-color: rgb(165, 119, 208);
+    padding: 20px;
+    margin: 20px;
+}
+
+.item2{
+    border: solid;
+    border-color: rgb(165, 119, 208);
+    padding: 20px;
+    margin: 20px;
+}
