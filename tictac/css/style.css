@@ -1,0 +1,93 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+.izq{
+    width: 15%;
+    height: 100vh;
+    background-color:aqua;
+    float: left;
+}
+.cen{
+    width: 70%;
+    height: 100vh;
+    background-color:bisque;
+    float: left;
+}
+.der{
+    width: 15%;
+    height: 100vh;
+    background-color:aqua;
+    float: right;
+}
+.photo{
+    width: 100%;
+    height: 200px;
+    background-color: brown;
+    margin-top: 60px;
+}
+.name{
+    width: 100%;
+    height: 50px;
+    background-color:beige;
+}
+.score{
+    width: 100%;
+    height: 50px;
+    background-color:blueviolet;
+}
+.time{
+    width: 100%;
+    height: 50px;
+    background-color:cadetblue;
+}
+.title{
+    width: 100%;
+    height: 50px;
+    background-color:cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: center
+    
+}
+
+.cen>.sets{
+    width: 20%;
+    height: 50px;
+    background: rgb(255, 255, 255);
+
+    text-align: center;
+}
+
+.triky{
+    width: 100%;
+    height: 650px;
+    background-color:chartreuse;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.btn-Start{
+    width: 33%;
+    height: 50px;
+    font-size: 30px;
+}
+.sec{
+    width: 148px;
+    height: 148px;
+    background-color:blue;
+    float: left;
+    border: 1px solid black;
+}
+.square{
+    width: 450px;
+    height: 450px;
+    background-color:black;
+    margin-top: 60px;
+}
