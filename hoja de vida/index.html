@@ -15,66 +15,86 @@
         <h1>CSS GRID</h1>
     </header>
 
-    <div class="container">
+    <div class="container" id="container">
         <header class="header">
             <h1>logo</h1>
         </header>
         <main class="content">
 
             <article class="article">
-                <h1>Title</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima libero repellat illo aperiam,
-                    reprehenderit fuga tenetur eveniet perferendis corporis iusto.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, delectus!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, sequi.</p>
+                <h1>Perfil</h1>
+                <p>Soy aprendiz de ADSI (Analisis y desarrollo de sistemas de informacion). Mi enfoque como programador
+                    está en el desarollo web y el desarrollo de aplicaciones moviles, aunque en un futuro me gustaría
+                    aprender sobre Machine Learning y Data Science.</p>
+                <p>Actualmente estoy aprendiendo sobre los lenguajes de programacion Javascript tanto para frontend como
+                    backend, Java para aplicaciones moviles nativas, Python para scripts, Lua para el desarrollo de
+                    videojuegos junto con HTML y CSS para desarrollo de aplicativos web.</p>
             </article>
 
             <article class="article">
-                <h1>Title</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima libero repellat illo aperiam,
-                    reprehenderit fuga tenetur eveniet perferendis corporis iusto.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, delectus!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, sequi.</p>
+                <h1>Gustos</h1>
+                <p>Me gusta la música aunque no escuche un genero en especifico, pero actualmente suelo escuchar a David
+                    Bowie, Elton John, Mi sobrino Memo y a Carlos Sadness. Estoy en una escuela de musica llamada La
+                    Casa del Musico donde cursé el nivel basico y avanzado de guitarra acustica, en la actualidad estoy
+                    en esa misma escuela aprendiendo Tecnica Vocal</p>
+                <p>Me gusta mucho comer todo lo que tenga queso,citrico o sea picante, y por otro lado tambiem me gustan
+                    mucho las frutas aunque <b>ODIO</b> las sandias.</p>
             </article>
 
             <article class="article">
-                <h1>Title</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima libero repellat illo aperiam,
-                    reprehenderit fuga tenetur eveniet perferendis corporis iusto.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, delectus!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, sequi.</p>
+                <h1>Cursos Complementarios</h1>
+                <p>Curso realizados en el ultimo año</p>
+
+                <ul class="Cursos">
+                    <li class="l1">
+                        <p>
+                            Curso virtual - Desarrollo Web con PHP
+                        </p>
+                    </li>
+                    <li class="l1">
+                        <p>
+                            Curso virtual - Redes y Seguridad
+                        </p>
+                    </li>
+                    <li class="l1">
+                        <p> 
+                            Curso virtual - Uso de Excel y Acess para el Desarrollo de Aplicaiones
+                            Administrativas Empresariales
+                        </p>
+                    </li>
+                </ul>
             </article>
 
         </main>
 
         <aside class="sidebar">
             <div>
-                <div class="drop1"></div>
-                
+                <div class="drop1" id="drop1"></div>
+
             </div>
             <div>
-                <div class="drop2"></div>
-                
+                <div class="drop2" id="drop2"></div>
+
             </div>
             <div>
-                <div class="drop3"></div>
-                
+                <div class="drop3" id="drop3"></div>
+
             </div>
         </aside>
 
-        
-            <div class="imgContainer1">
-                <img src="https://dummyimage.com/300x200/000/ffffff.jpg&text=Test+Image" alt="">
-            </div>
 
-            <div class="imgContainer2">
-                <img src="https://dummyimage.com/300x200/000/ffffff.jpg&text=Test+Image" alt="">
-            </div>
+        <div class="imgContainer1" id="imgContainer1" draggable="true">
+            <img class="img1" src="https://dummyimage.com/300x200/000/ffffff.jpg&text=Test+Image" alt="">
+        </div>
 
-            <div class="imgContainer3">
-                <img src="https://dummyimage.com/300x200/000/ffffff.jpg&text=Test+Image" alt="">
-            </div>
-        
+        <div class="imgContainer2" id="imgContainer2" draggable="true">
+            <img class="img2" src="https://dummyimage.com/300x200/000/ffffff.jpg&text=Test+Image" alt="">
+        </div>
+
+        <div class="imgContainer3" id="imgContainer3" draggable="true">
+            <img class="img3" src="https://dummyimage.com/300x200/000/ffffff.jpg&text=Test+Image" alt="">
+        </div>
+
 
         <footer class="footer">
             <h4>Footer</h4>
@@ -83,7 +103,7 @@
 
     </div>
 
-<script src="/js/app.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 
 </html>

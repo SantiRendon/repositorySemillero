@@ -66,6 +66,12 @@ body {
 .content>.article h1,
 .content>.article p {
     padding: 10px;
+    font-size: larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Cursos>.l1{
+    margin-left: 45px;
 }
 
 /* barra lateral donde se ubican los drop */
@@ -92,11 +98,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.container>.imgContainer1:hover,
-.container>.imgContainer2:hover,
-.container>.imgContainer3:hover {
     cursor: pointer;
 }
 
