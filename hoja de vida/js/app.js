@@ -36,36 +36,61 @@ drop03.addEventListener('dragover', e => {
 drop01.addEventListener('drop', e => {
 
     let key = e.dataTransfer.getData('ID')
-    console.log(key)
+
 
     if (key == 1) {
-        drop01.insertAdjacentElement('beforeend', img01)
-    }else{
-        window.alert('1')
+        drop01.appendChild(img01)
+    } else {
+        drop01.setAttribute('style', 'border-color: #FF7B7B;');
+
+        setTimeout(() => {
+            window.alert('La imagen no corresponde a informacion')
+        }, 100);
+
+        setTimeout(() => {
+            drop01.setAttribute('style', 'border-color: #1e272e;');
+        }, 3500);
     }
 
 });
 drop02.addEventListener('drop', e => {
 
     let key = e.dataTransfer.getData('ID')
-    console.log(key)
+
 
     if (key == 2) {
-        drop02.insertAdjacentElement('beforeend', img02)
-    }else{
-        window.alert('2')
+        drop02.appendChild(img02)
+    } else {
+
+        drop02.setAttribute('style', 'border-color: #FF7B7B;');
+
+        setTimeout(() => {
+            window.alert('La imagen no corresponde a gustos')
+        }, 100);
+
+        setTimeout(() => {
+            drop02.setAttribute('style', 'border-color: #1e272e;');
+        }, 3500);
     }
 
 });
 drop03.addEventListener('drop', e => {
 
     let key = e.dataTransfer.getData('ID')
-    console.log(key)
+
 
     if (key == 3) {
-        drop03.insertAdjacentElement('beforeend', img03)
-    }else{
-        window.alert('3')
+        drop03.appendChild(img03)
+    } else {
+        drop03.setAttribute('style', 'border-color: #FF7B7B;');
+        
+        setTimeout(() => {
+            window.alert('La imagen no corresponde a cursos')
+        }, 100);
+
+        setTimeout(() => {
+            drop03.setAttribute('style', 'border-color: #1e272e;');
+        }, 3500);
     }
 
 });
