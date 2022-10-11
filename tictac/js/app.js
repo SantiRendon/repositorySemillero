@@ -21,14 +21,11 @@ boton.addEventListener('click', e => {
 
             if (radPlayer1.checked == true)
                 window.alert('Empieza el jugador numero 1')
-                cronometro(timer1)
+            cronometro(timer1)
             if (radPlayer2.checked == true)
                 window.alert('Empieza el jugador numero 2')
-                cronometro(timer2)
-
-            
+            cronometro(timer2)
         }
-
     } else {
         window.alert('Numero de partidas no valido')
     }
@@ -38,11 +35,11 @@ boton.addEventListener('click', e => {
 
 
     let cronometro = (turno) => {
-        
-            counter = setInterval(() => {
-                turno.innerHTML = parseInt(turno.innerHTML)+1
-            }, 1000)
-        
+
+        counter = setInterval(() => {
+            turno.innerHTML = parseInt(turno.innerHTML) + 1
+        }, 1000)
+
     } // falta cronometro por turno
 
 
