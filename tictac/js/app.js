@@ -8,6 +8,8 @@ let radPlayer2 = document.querySelector('#radioBtn2')
 let timer1 = document.querySelector('#izq #time')
 let timer2 = document.querySelector('#der #time')
 
+let turno = 1;
+
 boton.addEventListener('click', e => {
     let input = window.prompt('Ingrese el numero de partidas')
 
@@ -30,23 +32,104 @@ boton.addEventListener('click', e => {
         window.alert('Numero de partidas no valido')
     }
 
-
-
-
-
     let cronometro = (turno) => {
 
-        counter = setInterval(() => {
+        c = setInterval(() => {
             turno.innerHTML = parseInt(turno.innerHTML) + 1
         }, 1000)
 
     } // falta cronometro por turno
 
-
-
-
-
 });
+
+function evaluar(element) {
+    const clickar = document.querySelector('.square')
+
+
+    //Horizontales
+    if (clickar.children[0].innerHTML == element &&
+        clickar.children[1].innerHTML == element &&
+        clickar.children[2].innerHTML == element) {
+
+        setTimeout(() => {
+            window.alert("el elemento " + element + " a ganado")
+        }, 100);
+    }
+
+    if (clickar.children[3].innerHTML == element &&
+        clickar.children[4].innerHTML == element &&
+        clickar.children[5].innerHTML == element) {
+        setTimeout(() => {
+            window.alert("el elemento " + element + " a ganado")
+        }, 100);
+    }
+
+    if (clickar.children[6].innerHTML == element &&
+        clickar.children[7].innerHTML == element &&
+        clickar.children[8].innerHTML == element) {
+        setTimeout(() => {
+            window.alert("el elemento " + element + " a ganado")
+        }, 100);
+    }
+
+    // vertical
+    if (clickar.children[0].innerHTML == element &&
+        clickar.children[3].innerHTML == element &&
+        clickar.children[6].innerHTML == element) {
+        setTimeout(() => {
+            window.alert("el elemento " + element + " a ganado")
+        }, 100);
+    }
+    if (clickar.children[1].innerHTML == element &&
+        clickar.children[4].innerHTML == element &&
+        clickar.children[7].innerHTML == element) {
+        setTimeout(() => {
+            window.alert("el elemento " + element + " a ganado")
+        }, 100);
+    }
+    if (clickar.children[2].innerHTML == element &&
+        clickar.children[5].innerHTML == element &&
+        clickar.children[8].innerHTML == element) {
+        setTimeout(() => {
+            window.alert("el elemento " + element + " a ganado")
+        }, 100);
+    }
+
+    //Diagonal
+    if (clickar.children[0].innerHTML == element &&
+        clickar.children[4].innerHTML == element &&
+        clickar.children[8].innerHTML == element) {
+        setTimeout(() => { 
+            window.alert("el elemento " + element + " a ganado")
+        }, 100);
+    }
+    if (clickar.children[2].innerHTML == element &&
+        clickar.children[4].innerHTML == element &&
+        clickar.children[6].innerHTML == element) {
+        setTimeout(() => {
+            window.alert("el elemento " + element + " a ganado")
+        }, 100);
+    }
+    //clickar.addEventListener('click',marcar())
+}
+
+
+function marcar(obj) {
+    if (turno == 1) {
+        if (obj.target.innerHTML == "") {
+            obj.target.innerHTML = 'X';
+            turno = 2;
+        }
+    } else {
+        if (obj.target.innerHTML == "") {
+
+            obj.target.innerHTML = 'O';
+            turno = 1;
+        }
+    }
+
+    evaluar(obj.target.innerHTML);
+}
 
 
 // Tarea: pulir el cronometro y realizar el cambio de turno cuando un jugador seleccione uan casilla del triki
