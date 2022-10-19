@@ -1,12 +1,12 @@
 export class Question{
 
-    constructor(text,choises,answer){
+    constructor(text,choices,answer){
         this.text = text;
-        this.choises = choises;
+        this.choices = choices;
         this.answer = answer;
     }
 
-    correctAnswer(choise){
-        return choise === this.answer;
+    correctAnswer(choices){
+        return choices === this.answer;
     }
 }
