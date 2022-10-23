@@ -4,13 +4,14 @@ import { UI } from "./models/UI.js"
 
 const renderPage = (quiz, ui) => {
     if (quiz.isEnded()) {
-        console.log('FIN')
+        ui.showScore(quiz.score);
     } else {
         ui.showQuestion(quiz.getQuestionIndex().text);
         ui.showChoices(quiz.getQuestionIndex().choices, (currentChoice) => {
             quiz.guess(currentChoice);
             renderPage(quiz, ui)
         });
+        ui.showProgress(quiz.questionIndex + 1, quiz.questions.length)
     }
 }
 
