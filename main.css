@@ -1,0 +1,89 @@
+/* Valores predeterminados a la pagina */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue",Arial, Helvetica, sans-serif;
+}
+
+/* Estilos para el cuerpo */
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Estilos para el contenedor al soltar archivos */
+.drop-area {
+    border: 5px dashed #ddd;
+    height: 500px;
+    width: 700px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Estilos para cuando la clase drop-area
+    Tambien tenga la clase active */
+.drop-area.active {
+    background-color: #b8b4fe;
+    color: black;
+    border: 2px dashed #618ac9;
+}
+
+/* Estilos para el elemento h2 dentro de la clase */
+.drop-area h2{
+    font-size: 30px;
+    font-weight: 500px;
+    color: #000;
+}
+/* Estilos para el elementoo span dentro de la clase */
+.drop-area span{
+    font-size: 25px;
+    font-weight: 500px;
+    color: #000;
+    margin: 20px;
+}
+/* Estilos para el elemento button dentro de la clase */
+.drop-area button{
+    padding: 10px 25px;
+    font-size: 20px;
+    border: 0px;
+    outline: none;
+    background-color: #5256ad;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+/* Estilos para el contenedor que muestra las imagenes y su informacion */
+.file-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Estilos para el contenedor que tiene todas las imagenes subidas */
+#preview{
+    margin-top: 10px;
+}
+
+.status-text{
+    padding: 0 10px;
+}
+
+/* Estilos cuando esté la clase sucess */
+.success{
+    color: #52ad5a;
+}
+
+/* Estilos para la clase failure */
+.failure{
+    color: #f00000;
+}
